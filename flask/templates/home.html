@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Submission</title>
+</head>
+<body>
+    <h1>Enter a Number</h1>
+    <form method="POST">
+        <input type="text" name="number" placeholder="Enter a number" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if numbers %}
+        <h2>Numbers Submitted So Far:</h2>
+        <ul>
+            {% for num in numbers %}
+                <li>{{ num }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <p>To view JSON output, go to <a href="/data" target="_blank">/data</a>.</p>
+</body>
+</html>
+

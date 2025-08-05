@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submitted Numbers</title>
+</head>
+<body>
+    <h2>Numbers Submitted So Far:</h2>
+    <ul>
+        {% for num in numbers %}
+            <li>{{ num }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/home">Go Back</a>
+</body>
+</html>
